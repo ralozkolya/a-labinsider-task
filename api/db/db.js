@@ -1,6 +1,6 @@
-const MongoClient = require("mongodb").MongoClient;
+const MongoClient = require('mongodb').MongoClient;
 
-const { DB_HOST, DB_PORT, DB_NAME } = require("./constants");
+const { DB_HOST, DB_PORT, DB_NAME } = require('./constants');
 
 let client;
 

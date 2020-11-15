@@ -1,14 +1,17 @@
-const createError = require("http-errors");
-const express = require("express");
-const cors = require("cors");
+const createError = require('http-errors');
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
 
-const retrieveFacilities = require("./db/facilities");
+const retrieveFacilities = require('./db/facilities');
 
 const app = express();
 
 app.use(cors());
 
-app.get("/facilities", async (req, res, next) => {
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/facilities', async (req, res, next) => {
   try {
     res.send(await retrieveFacilities());
   } catch (e) {
