@@ -7,3 +7,6 @@ Project is separated into two independent `api` and `ui` sub-projects.
 After installing dependencies by running `npm i` in both directories, DB can be seeded with an example data by running `npm run seed` in `api` directory.
 
 Both projects can be started by running `npm start` in their respective directories.
+
+## DEMO:
+[https://a-labinsider.razmadze.me/](https://a-labinsider.razmadze.me/)
