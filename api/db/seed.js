@@ -1,8 +1,8 @@
-const Promise = require("bluebird");
-const faker = require("faker");
+const Promise = require('bluebird');
+const faker = require('faker');
 
-const { DB_COLLECTION, DB_NAME } = require("./constants");
-const { getClient } = require("./db");
+const { DB_COLLECTION, DB_NAME } = require('./constants');
+const { getClient } = require('./db');
 
 const COUNT = parseInt(process.env.COUNT) || 60;
 
@@ -10,7 +10,11 @@ getClient().then(async (client) => {
   const db = client.db(DB_NAME);
   const collection = db.collection(DB_COLLECTION);
 
-  await collection.drop();
+  try {
+    await collection.drop();
+  } catch (e) {
+    console.error(e.message);
+  }
 
   Promise.each(Array(COUNT).fill(1), async (_, i) => {
     const facility = {
