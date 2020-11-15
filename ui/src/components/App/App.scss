@@ -1,0 +1,36 @@
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  background-color: #555;
+
+  ul {
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    padding: 0 1rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+.pull-right {
+  float: right;
+}

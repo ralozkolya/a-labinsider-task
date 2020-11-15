@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "PORT=3001 node-dev ./bin/www",
+    "seed": "node ./db/seed.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.6.3"
+  },
+  "devDependencies": {
+    "faker": "^5.1.0",
+    "node-dev": "^6.2.0"
+  }
+}
