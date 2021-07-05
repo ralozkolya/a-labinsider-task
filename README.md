@@ -12,6 +12,3 @@ Both projects can be started by running `npm start` in their respective director
 
 - I've written the table component from the scratch, because `@material-ui/data-grid` was in alpha at the time;
 - I've implemented pagination on the client side, since we're dealing with a manageable amount of facilities.
-
-## DEMO:
-[https://a-labinsider.razmadze.me/](https://a-labinsider.razmadze.me/)
